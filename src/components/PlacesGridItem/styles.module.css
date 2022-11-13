@@ -2,13 +2,18 @@
   color: #434343;
   font-size: 12px;
   padding: 0.7em;
-  width: calc(292px - 1.4em);
+  width: -webkit-fill-available;
   margin: 0 auto;
   border: 1px solid #D7D7D7;
+  cursor: pointer;
+}
+
+.container:hover {
+  transform: scale(1.025);
 }
 
 .img_container {
-  width: 260px;
+  width: 100%;
   height: calc(265px - 1.4em);
   margin: 0 auto;
 }
@@ -36,7 +41,7 @@
   position: absolute;
   border: none;
   background: transparent;
-  left: 224px;
+  left: 82%;
   top: 9px;
 }
 

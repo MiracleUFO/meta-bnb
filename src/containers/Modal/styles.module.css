@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   color: #333333;
+  z-index: 50;
 }
 
 .modal_backdrop,

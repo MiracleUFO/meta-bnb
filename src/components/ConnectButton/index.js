@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 const ConnectButton = ({ small }) => {
   const [showWallet, setShowWallet] = useState(false);
-  const [showDisconnect] = useState(false);
+  const [showDisconnect, setShowDisconnect] = useState(false);
 
   const [address, setAddress] = useState('');
   const disconnect = useDisconnect();
@@ -16,6 +16,11 @@ const ConnectButton = ({ small }) => {
   }
 
   const handleShowDisconnect = (e) => {
+    e.stopPropagation();
+    setShowDisconnect(!showDisconnect);
+  }
+
+  const handleDisconnect = (e) => {
     e.stopPropagation();
     disconnect();
     window.location.reload();
@@ -31,7 +36,7 @@ const ConnectButton = ({ small }) => {
           <i className="fa fa-solid fa-chevron-down"></i>
         </button>
         {showDisconnect ? (
-          <div className={styles.disconnect_btn} onClick={handleShowDisconnect}>
+          <div className={styles.disconnect_btn} onClick={handleDisconnect}>
             Disconnect
           </div>
         ) : null}

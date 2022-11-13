@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Img from '../../assets/img.png';
+//import Img from '../../assets/img.png';
 import HeartIcon from '../../assets/heart.svg';
 import StarIcon from '../../assets/star.svg';
 import styles from './styles.module.css';
@@ -10,7 +10,7 @@ const PlaceGridItem = ({src, key}) => {
   return (
     <div className={styles.container}>
       <div className={styles.img_container}>
-        <img src={Img} alt={`House ${key}`} />
+        <img src={src} alt={`House ${key}`} />
         <button onClick={() => setLiked(!liked)} className={styles.liked_container}>
           <img src={HeartIcon} alt="heart" className={liked ? styles.liked : ''} />
         </button>
