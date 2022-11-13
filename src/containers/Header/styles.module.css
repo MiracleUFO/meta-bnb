@@ -1,6 +1,6 @@
 .header {
   grid-area: header;
-  margin: 25px auto;
+  margin: 30px auto;
   font-weight: 400;
 }
 
@@ -84,9 +84,15 @@ a, .menu_floating > * {
   font-size: 18.5px;
 }
 
+@media (min-width: 610px) {
+  .menu a {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 1024px) or (max-width: 1281px) { /* tablets */
   .nav .homeLink img {
-    width: 7.5em;
+    width: 10em;
     height: 1.7em;
   }
 

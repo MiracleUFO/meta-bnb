@@ -1,3 +1,5 @@
-const NotFound = () => <p style={{marginTop: 240, fontSize: 20, letterSpacing: 2, color: '#434343'}}>404</p>
+import styles from './styles.module.css';
+
+const NotFound = () => <p className={styles.text}>404</p>
 
 export default NotFound;

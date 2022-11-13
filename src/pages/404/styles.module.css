@@ -1,0 +1,8 @@
+.text {
+  grid-area: main;
+  margin-top: 240px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #434343;
+  height: 45vh;
+}

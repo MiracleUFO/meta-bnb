@@ -9,6 +9,7 @@ import Places from './pages/Places';
 import NotFound from './pages/404';
 import './styles/App.css';
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import Footer from './containers/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/places" element={<Places />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
+          <Footer />
         </Router>
       </ThirdwebProvider>
     </div>

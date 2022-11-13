@@ -51,7 +51,7 @@
   transform: rotateX(30deg);
 }
 
-@media (min-width: 600px) { /* larger screens: tablets and pcs */
+@media (min-width: 610px) { /* larger screens: tablets and pcs */
   .modal {
     width: 40vw;
   }
@@ -110,7 +110,7 @@
   align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 610px) {
   .wallet_btn {
     height: 68px;
   }

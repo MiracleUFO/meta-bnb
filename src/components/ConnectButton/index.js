@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 const ConnectButton = ({ small }) => {
   const [showWallet, setShowWallet] = useState(false);
-  const [showDisconnect, setShowDisconnect] = useState(false);
+  const [showDisconnect] = useState(false);
 
   const [address, setAddress] = useState('');
   const disconnect = useDisconnect();
@@ -24,7 +24,7 @@ const ConnectButton = ({ small }) => {
   if (address) 
     return (
       <div className={styles.disconnect_container}>
-        <button className={`${styles.button} ${small ? styles.small : ''} ${styles.address_btn}`} onClick={() => setShowDisconnect(!showDisconnect)}>
+        <button className={`${styles.button} ${small ? styles.small : ''} ${styles.address_btn}`} onClick={handleShowDisconnect}>
           <span className={styles.truncate} title={address}>
             {address}
           </span>

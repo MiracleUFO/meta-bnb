@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .App {
   text-align: center;
   height: 100vh;
@@ -14,7 +18,9 @@
   position: relative;
 }
 
-main, .main, header {
+main,
+.main,
+header {
   width: 90vw;
   margin: 0 auto;
 }

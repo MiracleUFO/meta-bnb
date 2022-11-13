@@ -33,6 +33,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 55%;
+  margin: 0 auto;
+}
+
+@media (min-width: 610px) {
+  .address_btn {
+    width: 100%;
+  }
 }
 
 .disconnect_container {
@@ -42,7 +50,7 @@
 .disconnect_btn {
   position: absolute;
   width: 80%;
-  left: 5.5%;
+  left: 12%;
   margin-top: 6px;
   border: 1px solid #e9ecf0;
   border-radius: 15px;
