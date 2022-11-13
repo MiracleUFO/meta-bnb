@@ -7,12 +7,17 @@ import MetamaskLogo from '../../assets/metamask-logo.png';
 import WalletConnectLogo from '../../assets/walletconnect-logo.png';
 import Chevron from '../../assets/chevron.png';
 import styles from './styles.module.css';
+import { useEffect } from 'react';
 
-const Modal = ({show, setShow}) => {
+const Modal = ({show, setShow, setAddress}) => {
   const address = useAddress();
-  console.log(address);
   const connectWithMetamask = useMetamask();
   const connectWithWalletConnect = useWalletConnect();
+
+  useEffect(() => {
+    if (address)
+      setAddress(address);
+  }, [address, setAddress]);
 
   return (
     <>

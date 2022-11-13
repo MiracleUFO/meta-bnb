@@ -24,7 +24,7 @@
   background: white;
   border-radius: 16px;
   width: 80vw;
-  height: 205px;
+  height: fit-content;
 }
 
 .modal_header {
@@ -51,15 +51,20 @@
   transform: rotateX(30deg);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) { /* larger screens: tablets and pcs */
   .modal {
     width: 40vw;
-    height: 315px;
   }
 
   .modal_header h1 {
     font-size: 24px;
     color: #333333;
+  }
+}
+
+@media (min-width: 1024px) or (min-width: 1281px) { /* PCs only  */
+  .modal {
+    height: 315px;
   }
 }
 
@@ -70,7 +75,7 @@
 .button_section > p {
   font-weight: 400;
   text-align: start;
-  padding-top: 1vw;
+  padding-top: 0.7vw;
 }
 
 .wallet_btn {
@@ -81,9 +86,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid #CFD8DC;
-  margin-bottom: 12px;
+  margin-bottom: 13.5px;
   background: white;
   cursor: pointer;
   font-family: 'Sora';
@@ -111,7 +116,7 @@
   }
 
   .wallet_btn .logo {
-    width: 2.9em !important;
+    width: 2.6em !important;
   }
 
   .modal_header {
@@ -120,5 +125,5 @@
 }
 
 .chevron {
-  width: 1.3em !important
+  width: 1em !important
 }

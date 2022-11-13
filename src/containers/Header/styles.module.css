@@ -14,12 +14,13 @@
   align-items: center;
 }
 
-.nav_mobile img {
+.nav_mobile .homeLink img {
   width: 6em;
 }
 
-.nav img {
-  width: 10em;
+.nav .homeLink img {
+  width: 10.5em;
+  height: 1.8em;
 }
 
 @media (min-width: 610px) { /* larger screens: tablets and pcs */
@@ -74,7 +75,7 @@ a, .menu_floating > * {
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-  top: 9px;
+  top: 5px;
 }
 
 .menu a {
@@ -84,8 +85,9 @@ a, .menu_floating > * {
 }
 
 @media (max-width: 1024px) or (max-width: 1281px) { /* tablets */
-  .nav img {
-    width: 7em;
+  .nav .homeLink img {
+    width: 7.5em;
+    height: 1.7em;
   }
 
   .menu {
