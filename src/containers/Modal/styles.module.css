@@ -86,6 +86,9 @@
   margin-bottom: 12px;
   background: white;
   cursor: pointer;
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .wallet_btn:hover {

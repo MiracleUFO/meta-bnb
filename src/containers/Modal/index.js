@@ -1,22 +1,24 @@
-/*import {
+import {
   useMetamask,
   useWalletConnect,
   useAddress,
-} from '@thirdweb-dev/react';*/
+} from '@thirdweb-dev/react';
 import MetamaskLogo from '../../assets/metamask-logo.png';
 import WalletConnectLogo from '../../assets/walletconnect-logo.png';
 import Chevron from '../../assets/chevron.png';
 import styles from './styles.module.css';
 
 const Modal = ({show, setShow}) => {
-  /*const connectWithMetamask = useMetamask();
-  const connectWithWalletConnect = useWalletConnect();*/
+  const address = useAddress();
+  console.log(address);
+  const connectWithMetamask = useMetamask();
+  const connectWithWalletConnect = useWalletConnect();
 
   return (
     <>
       {show ? (
         <div className={styles.modal_container} id="modal-container" onClick={(e) => e.stopPropagation()}>
-          <div className={styles.modal_backdrop} id="modal-overlay"></div>
+          <div className={styles.modal_backdrop} id="modal-overlay" onClick={() => setShow(false)}></div>
           
           <div className={styles.modal}>
             <section className={styles.modal_header}>
@@ -29,7 +31,7 @@ const Modal = ({show, setShow}) => {
 
               <button
                 className={styles.wallet_btn}
-                onClick={() => console.log('hey')}
+                onClick={connectWithMetamask}
               >
                 <div>
                   <img src={MetamaskLogo} className={styles.logo} alt="Metamask Logo, orange fox head" />
@@ -40,7 +42,7 @@ const Modal = ({show, setShow}) => {
 
               <button
                 className={styles.wallet_btn}
-                onClick={() => console.log('hey')}
+                onClick={connectWithWalletConnect}
               >
                 <div>
                   <img src={WalletConnectLogo} className={styles.logo} alt="WalletConnect Logo" />
