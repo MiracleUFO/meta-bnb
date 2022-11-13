@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 45;
 }
 
 .nav_mobile .homeLink img {
@@ -24,6 +25,10 @@
 }
 
 @media (min-width: 610px) { /* larger screens: tablets and pcs */
+  .header {
+    margin: 50px auto;
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -58,6 +63,7 @@
   margin: 2.5px 5px;
   padding: 5px 0;
   color: #843FE8;
+  z-index: 45;
 }
 
 a, .menu_floating > * {
@@ -70,7 +76,7 @@ a, .menu_floating > * {
 }
 
 .menu {
-  min-width: 38%;
+  min-width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

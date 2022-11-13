@@ -24,3 +24,7 @@ header {
   width: 90vw;
   margin: 0 auto;
 }
+
+button {
+  cursor: pointer;
+}
