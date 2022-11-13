@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import styles from './styles.module.css';
 import { useState } from 'react';
+import ConnectButton from '../../components/ConnectButton';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -23,6 +24,7 @@ const Header = () => {
               <Link to="/places">Place to Stay</Link>
               <Link to="/nfts">NFTs</Link>
               <Link to="/community">Community</Link>
+              <ConnectButton small />
             </nav>)
           : null}
         </nav>
@@ -36,6 +38,7 @@ const Header = () => {
           <Link to="/nfts">NFTs</Link>
           <Link to="/community">Community</Link>
         </nav>
+        <ConnectButton />
       </nav>
     </header>
   );

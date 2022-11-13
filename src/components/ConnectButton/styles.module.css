@@ -1,0 +1,16 @@
+.button {
+  width: 90%;
+  max-width: 170px;
+  color: white;
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  border-radius: 10px;
+  border: none;
+  height: 46px;
+  font-family: 'Red Rose';
+}
+
+.small {
+  width: 80%;
+  height: 40px;
+  font-size: 10px;
+}

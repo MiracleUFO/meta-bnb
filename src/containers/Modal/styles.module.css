@@ -1,0 +1,121 @@
+.modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+}
+
+.modal_backdrop,
+.modal_container {
+  position: fixed;
+  background: rgba(64, 64, 64, 0.3);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.modal_container {
+  background: none;
+}
+
+.modal {
+  z-index: 20;
+  background: white;
+  border-radius: 16px;
+  width: 80vw;
+  height: 205px;
+}
+
+.modal_header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #CFD8DC;
+  margin-bottom: 10px;
+  padding: 3vw;
+}
+
+.modal_header h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.modal_header > span {
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #1A1A1A;
+  font-family: 'Helvetica';
+  transform: rotateX(30deg);
+}
+
+@media (min-width: 600px) {
+  .modal {
+    width: 40vw;
+    height: 315px;
+  }
+
+  .modal_header h1 {
+    font-size: 24px;
+    color: #333333;
+  }
+}
+
+.button_section {
+  margin: 0 2vw;
+}
+
+.button_section > p {
+  font-weight: 400;
+  text-align: start;
+  padding-top: 1vw;
+}
+
+.wallet_btn {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 5%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 1px solid #CFD8DC;
+  margin-bottom: 12px;
+  background: white;
+  cursor: pointer;
+}
+
+.wallet_btn:hover {
+  background: #F8F9FA;
+}
+
+.wallet_btn .logo {
+  width: 2em !important;
+  margin-right: 0.6em;
+}
+
+.wallet_btn > div {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .wallet_btn {
+    height: 68px;
+  }
+
+  .wallet_btn .logo {
+    width: 2.9em !important;
+  }
+
+  .modal_header {
+    padding: 1.5vw 2vw;
+  }
+}
+
+.chevron {
+  width: 1.3em !important
+}
