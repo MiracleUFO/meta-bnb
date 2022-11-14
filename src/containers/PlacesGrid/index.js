@@ -4,7 +4,10 @@ import styles from './styles.module.css';
 
 const PlacesGrid = ({rows}) => {
   return (
-    <section className={`${styles.rows_container} ${rows === 2 ? styles.reverse : ''}`}>
+    <section
+      className={`${styles.rows_container} ${rows === 2 ? styles.reverse : ''}`}
+      style={{width: rows === 2 ? '90vw' : '100%'}}
+    >
       <div className={styles.row}>
         {[...Array(4)].map((x, i) => 
           <PlaceGridItem src={images[i + 4]} />
