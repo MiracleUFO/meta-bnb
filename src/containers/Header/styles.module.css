@@ -24,7 +24,8 @@
   height: 1.8em;
 }
 
-@media (min-width: 610px) { /* larger screens: tablets and pcs */
+@media (min-width: 610px) {
+  /* larger screens: tablets and pcs */
   .header {
     margin: 50px auto;
   }
@@ -96,7 +97,8 @@ a, .menu_floating > * {
   }
 }
 
-@media (max-width: 1024px) or (max-width: 1281px) { /* tablets */
+@media (max-width: 1024px) or (max-width: 1281px) {
+  /* tablets only */
   .nav .homeLink img {
     width: 10em;
     height: 1.7em;

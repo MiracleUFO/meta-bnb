@@ -52,7 +52,8 @@
   transform: rotateX(30deg);
 }
 
-@media (min-width: 610px) { /* larger screens: tablets and pcs */
+@media (min-width: 610px) {
+  /* larger screens: tablets and pcs */
   .modal {
     width: 40vw;
   }
@@ -63,7 +64,8 @@
   }
 }
 
-@media (min-width: 1024px) or (min-width: 1281px) { /* PCs only  */
+@media (min-width: 1024px) or (min-width: 1281px) {
+/* PCs only  */
   .modal {
     height: 315px;
   }

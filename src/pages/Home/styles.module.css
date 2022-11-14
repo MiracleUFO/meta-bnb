@@ -1,4 +1,58 @@
 .main {
   grid-area: main;
   width: 100vw;
+  color: #434343;
+}
+
+.main > section {
+  width: 90vw;
+  margin: 0 auto 70px;
+}
+
+.hero p {
+  font-size: 4vw;
+  line-height: 1.4;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.hero_header {
+  font-size: 6.2vw;
+  font-weight: 400;
+}
+
+.hero_header > span {
+  color: #A02279;
+  font-weight: 700;
+}
+
+@media (min-width: 610px) {
+  .grid_section h1 {
+    font-size: 48px;
+    margin: 50px 0 35px;
+  }
+
+  .hero_header {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1024px) or (min-width: 1281px) {
+  /* PCs only  */
+  .hero {
+    display: flex;
+    text-align: left;
+  }
+
+  .hero > article {
+    width: 50%;
+    float: left;
+  }
+
+  .hero p {
+    font-size: 1.6vw;
+    width: 95%;
+    margin: 0;
+    line-height: 1.45;
+  }
 }

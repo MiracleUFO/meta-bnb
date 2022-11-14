@@ -1,5 +1,6 @@
 .container {
-  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  background:
+    linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
   display: flex;
   justify-content: space-around;
   align-items: center;

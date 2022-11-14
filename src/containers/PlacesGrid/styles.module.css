@@ -21,7 +21,8 @@
   }
 }
 
-@media (min-width: 610px) and ((max-width: 1024px) or (max-width: 1281px)) { /* tablets */
+@media (min-width: 610px) and ((max-width: 1024px) or (max-width: 1281px)) {
+  /* tablets */
   .row {
     grid-template-columns: repeat(2, 1fr);
   }
