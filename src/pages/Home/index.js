@@ -4,6 +4,7 @@ import PlacesGrid from '../../containers/PlacesGrid';
 
 import { images } from '../../containers/PlacesGrid/constants';
 import GridImageOne from '../../assets/grid-img15-ortho.png';
+import NftsGridImages from '../../assets/nfts-grid.svg';
 
 import styles from './styles.module.css';
 
@@ -35,9 +36,23 @@ const Home = () => {
       </section>
 
       <Banner />
+
       <section className={styles.grid_section}>
         <h1>Inspiration for your next adventure</h1>
         <PlacesGrid rows={2} />
+      </section>
+
+      <section className={styles.nfts_section}>
+        <div className={styles.nfts_text}>
+          <h1>Metabnb NFTs</h1>
+          <p>Discover our NFT gift cards collection.&nbsp;
+            Loyal customers gets amazing gift cards which are traded as NFTs.&nbsp;
+            These NFTs gives our customer access to loads of our exclusive services.
+          </p>
+          <button>Learn more</button>
+        </div>
+
+        <img className={styles.nfts_grid} src={NftsGridImages} alt="Nfts images grid" />
       </section>
     </main>
   )

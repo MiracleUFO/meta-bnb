@@ -1,6 +1,7 @@
 # Metabnb
 ### NOTE:
 Make sure to have internet connectivity while running this app so that icons and fonts will load properly.
+You can also safely connect your Metamask and WalletConnect wallet to test.
 ## Available Scripts
 
 In the project directory, you can run:

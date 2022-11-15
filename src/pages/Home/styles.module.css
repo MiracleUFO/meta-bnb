@@ -6,7 +6,16 @@
 
 .main > section {
   width: 90vw;
-  margin: 0 auto 70px;
+  margin: 0 auto 50px;
+}
+
+.main > section:first-of-type {
+  margin-bottom: 95px;
+}
+
+.main > section:nth-of-type(3) {
+  width: 100vw;
+  margin-bottom: 0;
 }
 
 .hero p {
@@ -29,7 +38,7 @@
 @media (min-width: 610px) {
   .grid_section h1 {
     font-size: 48px;
-    margin: 50px 0 35px;
+    margin: 60px 0 40px;
   }
 
   .hero_header {
@@ -39,6 +48,10 @@
 
 @media (min-width: 1024px) or (min-width: 1281px) {
   /* PCs only  */
+  .main > section:first-of-type {
+    margin-bottom: 78px;
+  }
+
   .hero {
     width: 90vw;
     display: flex;
@@ -60,7 +73,7 @@
 }
 
 .img_grid {
-  height: 270px;
+  height: auto;
   display: flex;
   margin: 10px auto;
 }
@@ -80,7 +93,6 @@
   /* tablets only */
   .img_grid {
     width: 80%;
-    height: 500px;
     margin-top: 47px;
   }
   .img_grid img {
@@ -93,7 +105,6 @@
   .img_grid {
     margin: 0 0 50px auto;
     width: 475px;
-    height: 440px;
     align-items: center;
   }
 
@@ -103,5 +114,89 @@
 
   .img_grid > div:first-of-type {
     top: 88px;
+  }
+}
+
+/* - - - NFTs SECTION - - - */
+.nfts_section {
+  display: flex;
+  flex-direction: column;
+  background: #A02279;
+  color: white;
+  height: 800px;
+  box-sizing: border-box;
+  padding: 6vh 5vw 5vh;
+  align-items: center;
+}
+
+.nfts_text h1 {
+  font-size: 30px;
+}
+
+
+.nfts_text p {
+  font-size: 15px;
+  line-height: 35px;
+}
+
+.nfts_text button {
+  width: 130.5px;
+  height: 48px;
+  background: white;
+  color: #A02279;
+  border: none;
+  font-family: 'Red Rose';
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 3vh;
+}
+
+.nfts_grid {
+  width: 80%;
+  position: relative;
+  top: 50px;
+}
+
+@media (min-width: 610px) {
+  /* larger screens: tablets & PC */
+  .nfts_section {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 774px;
+    padding-top: 15vh;
+    text-align: left;
+    align-items: initial;
+  }
+
+  .nfts_text {
+    width: 35%;
+  }
+
+  .nfts_text h1 {
+    font-size: 48px;
+  }
+
+  .nfts_text p {
+    font-size: 18px;
+  }
+
+  .nfts_text button {
+    width: 156.5px;
+    margin-top: 5vh;
+  }
+
+  .nfts_grid {
+    width: 50%;
+    top: 0;
+    bottom: 5vh;
+  }
+}
+
+
+@media (min-width: 610px) and ((max-width: 1024px) or (max-width: 1281px)) {
+  /* tablets only */
+  .nfts_grid,
+  .nfts_text {
+    width: 50%;
   }
 }
