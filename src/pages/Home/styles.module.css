@@ -49,7 +49,7 @@
 @media (min-width: 1024px) or (min-width: 1281px) {
   /* PCs only  */
   .main > section:first-of-type {
-    margin-bottom: 78px;
+    margin-bottom: 73px;
   }
 
   .hero {

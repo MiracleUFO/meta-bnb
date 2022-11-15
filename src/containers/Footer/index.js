@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/logo-white.png';
+import Logo from '../../assets/logo-white.svg';
 import styles from './styles.module.css';
 
 const Footer = () => {
@@ -44,7 +44,7 @@ const Footer = () => {
       </section>
 
       <section>
-        <Link to="#">
+        <Link to="/about">
           <h1>About us</h1>
         </Link>
         <Link to="#">Road map</Link>

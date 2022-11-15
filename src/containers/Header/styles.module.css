@@ -16,12 +16,20 @@
 }
 
 .nav_mobile .homeLink img {
-  width: 6em;
+  width: 9em;
 }
 
 .nav .homeLink img {
   width: 10.5em;
   height: 1.8em;
+}
+
+@media (min-width: 1024px) or (min-width: 1281px) {
+  /* PCs only  */
+  .nav .homeLink img {
+    width: 15.75em;
+    height: 2.7em;
+  }
 }
 
 @media (min-width: 610px) {

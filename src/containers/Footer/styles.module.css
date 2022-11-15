@@ -6,7 +6,7 @@
   grid-area: footer;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 4vh;
+  grid-row-gap: 5vh;
   background: #1D1D1E;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .footer > section img {
-  width: 6em;
+  width: 9em;
   object-fit: cover;
 }
 
@@ -28,6 +28,14 @@
   .footer > section img {
     width: 10.5em;
     height: 1.8em;
+  }
+}
+
+@media (min-width: 1024px) or (min-width: 1281px) {
+  /* PCs only  */
+  .footer > section img {
+    width: 15.75em;
+    height: 2.7em;
   }
 }
 
