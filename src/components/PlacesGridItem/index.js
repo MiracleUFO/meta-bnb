@@ -1,5 +1,4 @@
 import { useState } from 'react';
-//import Img from '../../assets/img.png';
 import HeartIcon from '../../assets/heart.svg';
 import StarIcon from '../../assets/star.svg';
 import styles from './styles.module.css';

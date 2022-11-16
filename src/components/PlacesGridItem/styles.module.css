@@ -8,14 +8,15 @@
   cursor: pointer;
 }
 
-.container:hover {
-  transform: scale(1.025);
+.container:hover .img_container {
+  transform: scale(1.019);
 }
 
 .img_container {
   width: 100%;
   height: calc(265px - 1.4em);
   margin: 0 auto;
+  transition: all 1.05s ease-out;
 }
 
 .container,

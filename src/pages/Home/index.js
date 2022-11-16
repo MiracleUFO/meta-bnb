@@ -7,13 +7,14 @@ import GridImageOne from '../../assets/grid-img15-ortho.png';
 import NftsGridImages from '../../assets/nfts-grid.svg';
 
 import styles from './styles.module.css';
+import 'animate.css';
 
 const Home = () => {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
         <article>
-          <h1 className={styles.hero_header}>
+          <h1 className={`${styles.hero_header} animate__animated animate__fadeIn animate__slow`}>
             Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span>
           </h1>
           <p>
@@ -23,14 +24,14 @@ const Home = () => {
           <SearchBar />
         </article>
 
-        <div className={styles.img_grid}>
+        <div className={`${styles.img_grid}`}>
           <div>
-            <img src={GridImageOne} alt="House 1" />
-            <img src={images[15]} alt="House 2" />
+            <img src={GridImageOne} alt="House 1" className='animate__animated animate__fadeInDown animate__slow' />
+            <img src={images[15]} alt="House 2" className='animate__animated animate__fadeInDown animate__slow' />
           </div>
           <div>
-            <img src={images[8]} alt="House 3" />
-            <img src={images[9]} alt="House 2" />
+            <img src={images[8]} alt="House 3" className='animate__animated animate__fadeInDown animate__slow' />
+            <img src={images[9]} alt="House 2" className='animate__animated animate__fadeInDown animate__slow' />
           </div>
         </div>
       </section>
